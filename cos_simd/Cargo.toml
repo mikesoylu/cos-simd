@@ -1,0 +1,8 @@
+[package]
+name = "cos_simd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+packed_simd = "0.3.4"
+rayon = "1.7.0"

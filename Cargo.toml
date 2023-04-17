@@ -1,0 +1,22 @@
+[package]
+name = "cos-simd-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cos_simd = { package = "cos_simd", version = "0.1.0", path = "cos_simd" }
+rand = "0.8.5"
+
+[dev-dependencies]
+criterion = "0.3.5"
+
+[[bin]]
+name = "cos-simd-test"
+path = "main.rs"
+
+[[bench]]
+name = "benchmarks"
+path = "benches/benchmarks.rs"
+harness = false
